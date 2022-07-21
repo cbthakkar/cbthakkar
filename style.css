@@ -1,0 +1,852 @@
+* {
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    overflow-x: hidden;
+}
+
+[class*="col-"] {
+    width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+    .col-s-1 {
+        width: 8.33%;
+    }
+
+    .col-s-2 {
+        width: 16.66%;
+    }
+
+    .col-s-3 {
+        width: 25%;
+    }
+
+    .col-s-4 {
+        width: 33.33%;
+    }
+
+    .col-s-5 {
+        width: 41.66%;
+    }
+
+    .col-s-6 {
+        width: 50%;
+    }
+
+    .col-s-7 {
+        width: 58.33%;
+    }
+
+    .col-s-8 {
+        width: 66.66%;
+    }
+
+    .col-s-9 {
+        width: 75%;
+    }
+
+    .col-s-10 {
+        width: 83.33%;
+    }
+
+    .col-s-11 {
+        width: 91.66%;
+    }
+
+    .col-s-12 {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .col-1 {
+        width: 8.33%;
+    }
+
+    .col-2 {
+        width: 16.66%;
+    }
+
+    .col-3 {
+        width: 25%;
+    }
+
+    .col-4 {
+        width: 33.33%;
+    }
+
+    .col-5 {
+        width: 41.66%;
+    }
+
+    .col-6 {
+        width: 50%;
+    }
+
+    .col-7 {
+        width: 58.33%;
+    }
+
+    .col-8 {
+        width: 66.66%;
+    }
+
+    .col-9 {
+        width: 75%;
+    }
+
+    .col-10 {
+        width: 83.33%;
+    }
+
+    .col-11 {
+        width: 91.66%;
+    }
+
+    .col-12 {
+        width: 100%;
+    }
+}
+
+.header {
+    background-color: white;
+    padding: 1%;
+    position: fixed;
+    z-index: 10000;
+}
+
+.logo {
+    float: left;
+}
+
+.link {
+    float: right;
+}
+
+.link a {
+    float: left;
+    text-decoration: none;
+    color: black;
+    padding: 14px 17px;
+    display: block;
+}
+
+.link a:hover {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+
+.link a:visited {
+    border-bottom: 2px solid black;
+}
+
+@media only screen and (max-width: 600px) {
+    .link a {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.mainbar {
+    color: blue;
+    margin-top: 77px;
+    background-image: url(image/2.jpg);
+    background-repeat: no-repeat;
+    height: 500px;
+    background-size: 100% 100%;
+    /* padding: 8%; */
+}
+
+@media only screen and (max-width: 450px) {
+    .mgtop {
+        margin-top: 400px;
+    }
+}
+@media only screen and (min-width:600px) and (max-width:768px) {
+    .mgtop {
+        margin-top: 200px;
+    }
+}
+@media only screen and (max-width: 443px) {
+    .mgtop1 {
+        margin-top: 300px;
+    }
+}
+@media only screen and (min-width:444px) and (max-width:768px) {
+    .mgtop1 {
+        margin-top: 200px;
+    }
+}
+@media only screen and (max-width: 443px) {
+    .mgtop2 {
+        margin-top: 300px;
+    }
+}
+@media only screen and (min-width:444px) and (max-width:600px) {
+    .mgtop2 {
+        margin-top: 300px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .mgtop3 {
+        margin-top: 500px;
+    }
+}
+ @media only screen and (max-width: 600px) {
+    .link {
+        display: none;
+    }
+} 
+@media only screen and (min-width: 600px) {
+    .menulogo {
+        display: none;
+    }
+}
+ .menulogo{
+    position: absolute;
+    top: 10px;
+    right: 5px;
+   
+
+}
+
+
+.box {
+    width: 300px;
+    height: 300px;
+    border: 3px solid white;
+    margin-left: 300px;
+    margin-top: 100px;
+    padding: 30px;
+    color: white;
+    position: relative;
+}
+
+.multibox {
+    width: 300px;
+    height: 100px;
+    border: 3px solid red;
+}
+
+.title {
+    padding: 15px 3%;
+    text-align: center;
+}
+
+@media screen and (max-width:600px) {
+    .widt {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:768px) {
+    .title .widt {
+        width: 33.33%;
+    }
+}
+
+.unipadding {
+    padding: 2%;
+}
+
+.title1 {
+    padding: 20px 3%;
+    text-align: center;
+    background-color: #FAFBFF;
+}
+
+.about {
+    padding: 30px 6%;
+    position: relative;
+}
+
+.ause {
+    padding: 50px 60px;
+}
+
+.ause a {
+    text-decoration: none;
+    color: black;
+}
+
+.btn {
+    padding: 10px 30px;
+    border-radius: 20px;
+    font-size: 20px;
+    transition: 0.5s ease;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+.pic {
+    padding: 30px 6%;
+    text-align: center;
+    background-color: #F2F2F2;
+}
+
+.pic img {
+    width: 100%;
+}
+
+.package {
+    padding: 30px 6%;
+}
+
+.packbox {
+    height: 500px;
+    border: 1px solid wheat;
+    border-radius: 30px;
+    background: linear-gradient(#8DBBF6 35%, white 35%, white 30%);
+    text-align: center;
+}
+
+.package img {
+    border: 1px solid wheat;
+    padding: 20px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.packbox a {
+    text-decoration: none;
+    color: black;
+}
+
+.grip {
+    padding: 0px 6%;
+    background-color: #F5F5F5;
+    position: relative;
+}
+
+.grip img {
+    width: 100%;
+    height: 100%;
+}
+
+.paddingg {
+    padding: 50px 70px;
+    background-color: white;
+}
+
+.padding1 {
+    padding: 50px 70px;
+    text-align: right;
+    background-color: white;
+}
+
+.button {
+    text-align: center;
+    padding: 60px 0px;
+    background-color: #F5F5F5;
+}
+
+.button a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer {
+    background-image: url(image/background.jpg);
+    background-size: 100% 100%;
+    text-align: center;
+    padding: 50px 6%;
+}
+
+.lastbox {
+    padding: 20px;
+    height: 170px;
+    border-right: 1px solid #C7C7C7;
+    /* margin: 50px 8%; */
+    background-color: #E2E3E4;
+    transition: 2s ease-in-out;
+}
+
+@media screen and (max-width:768px) {
+    .lastbox {
+        width: 50%;
+    }
+}
+
+.details {
+    padding: 30px 6%;
+}
+
+.copy {
+    text-align: end;
+}
+
+/* About Us page Css */
+.mainbar2 {
+    margin-top: 77px;
+    background-image: url(image/ausebackground.jpg);
+    height: 350px;
+    background-size: 100% 100%;
+}
+
+.mainbox {
+    width: 250px;
+    height: 300px;
+    border: 3px solid white;
+    margin-left: 30%;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.pictures {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.picc {
+    padding: 0px 8%;
+    padding-bottom: 30px;
+}
+
+/* .slider {
+    background-image: url(image/picture1.jpg);
+    background-size: 100% 100%; 
+    height: 400px;
+    position: relative; 
+}  */
+
+.arrowleft {
+    width: 70px;
+    border-radius: 50%;
+    font-weight: bold;
+    color: #B4B3B2;
+    background-color: #363635;
+    text-align: center;
+    border: 1px solid transparent;
+    position: absolute;
+    top: 150px;
+    left: 10px;
+}
+
+.arrowleft:hover {
+    background-color: black;
+}
+
+.arrowright:hover {
+    background-color: black;
+}
+
+.arrowright {
+    width: 70px;
+    border-radius: 50%;
+    font-weight: bold;
+    color: #B4B3B2;
+    background-color: #363635;
+    text-align: center;
+    border: 1px solid transparent;
+    position: absolute;
+    top: 150px;
+    right: 10px;
+}
+
+
+/* Our Business page Css */
+
+.mainbar3 {
+    background-image: url(image/ourbackground.jpg);
+    background-size: 100% 100%;
+    margin-top: 77px;
+}
+
+.mainbox1 {
+    width: 250px;
+    height: 300px;
+    border: 3px solid white;
+    padding: 20px;
+    margin-left: 30%;
+}
+
+.pcenter {
+    text-align: center;
+    padding: 60px;
+}
+
+.oblink {
+    text-align: center;
+    padding: 30px;
+}
+
+.oblink a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    padding: 5px 20px;
+    transition: 0.5s ease;
+    display: inline-block;
+}
+
+.oblink a:hover {
+    color: blue;
+    border-bottom: 1px solid blue;
+}
+
+@media only screen and (max-width: 800px) {
+    .oblink a {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.ob1 {
+    padding: 0px 6%;
+}
+
+.ob1 img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.obimages {
+    border: 2px solid #F7F7F7;
+    padding: 4%;
+    text-align: center;
+    background-color: #F7F7F7;
+    font-weight: bold;
+    padding-bottom: 30px;
+    transition: 0.7s ease;
+}
+
+.obimages:hover {
+    background-color: white;
+}
+
+.seemore {
+    padding: 80px 0px;
+    text-align: center;
+}
+
+.seemore a {
+    text-decoration: none;
+    color: black;
+}
+
+.flip-vertical-fwd {
+    -webkit-animation: flip-vertical-fwd 2s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+    animation: flip-vertical-fwd 2s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2022-6-10 12:8:3
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation flip-vertical-fwd
+ * ----------------------------------------
+ */
+@-webkit-keyframes flip-vertical-fwd {
+    0% {
+        -webkit-transform: translateZ(0) rotateY(0);
+        transform: translateZ(0) rotateY(0);
+    }
+
+    100% {
+        -webkit-transform: translateZ(160px) rotateY(180deg);
+        transform: translateZ(160px) rotateY(180deg);
+    }
+}
+
+@keyframes flip-vertical-fwd {
+    0% {
+        -webkit-transform: translateZ(0) rotateY(0);
+        transform: translateZ(0) rotateY(0);
+    }
+
+    100% {
+        -webkit-transform: translateZ(160px) rotateY(180deg);
+        transform: translateZ(160px) rotateY(180deg);
+    }
+}
+
+.flip-horizontal-bottom {
+    -webkit-animation: flip-horizontal-bottom 2s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+    animation: flip-horizontal-bottom 2s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2022-6-10 12:13:35
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation flip-horizontal-bottom
+ * ----------------------------------------
+ */
+@-webkit-keyframes flip-horizontal-bottom {
+    0% {
+        -webkit-transform: rotateX(0);
+        transform: rotateX(0);
+    }
+
+    100% {
+        -webkit-transform: rotateX(-180deg);
+        transform: rotateX(-180deg);
+    }
+}
+
+@keyframes flip-horizontal-bottom {
+    0% {
+        -webkit-transform: rotateX(0);
+        transform: rotateX(0);
+    }
+
+    100% {
+        -webkit-transform: rotateX(-180deg);
+        transform: rotateX(-180deg);
+    }
+}
+
+.scale-up-hor-center {
+    -webkit-animation: scale-up-hor-center 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite both;
+    animation: scale-up-hor-center 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite both;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2022-6-10 12:17:37
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation scale-up-hor-center
+ * ----------------------------------------
+ */
+@-webkit-keyframes scale-up-hor-center {
+    0% {
+        -webkit-transform: scaleX(0.4);
+        transform: scaleX(0.4);
+    }
+
+    100% {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+    }
+}
+
+@keyframes scale-up-hor-center {
+    0% {
+        -webkit-transform: scaleX(0.4);
+        transform: scaleX(0.4);
+    }
+
+    100% {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+    }
+}
+
+
+/* News Information page Css */
+
+.mainbar4 {
+    margin-top: 77px;
+    background-image: url(image/mainbackgroundd.jpg);
+    background-size: 100% 100%;
+}
+
+.mainbox2 {
+    width: 250px;
+    height: 300px;
+    border: 3px solid white;
+    padding: 20px;
+    margin-left: 30%;
+}
+
+.articlee {
+    text-align: center;
+    padding-top: 60px;
+}
+
+.newsbtn {
+    text-align: center;
+    padding: 30px;
+}
+
+.pbtn {
+    padding: 15px;
+    background-color: white;
+    transition: 0.8s ease;
+    border: 1px solid wheat;
+}
+
+.newsbtn button:hover {
+    background-color: blue;
+    color: white;
+}
+
+.newss {
+    padding: 0px 6%;
+    background-color: #F7F7F7;
+    /* position: relative; */
+}
+
+.nibox {
+    border: 1px solid #E4E4E4;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.nibox img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.inbox {
+    border: 1px solid white;
+    border-bottom: 1px solid #E4E4E4;
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin: 15px;
+    margin-top: -30px;
+    text-align: center;
+    padding: 10px;
+}
+
+.inbox button {
+    border: 1px solid #E4E4E4;
+}
+
+.inbox button:hover {
+    background-color: rgba(60, 60, 180, 0.658);
+    color: white;
+}
+
+.multibtn {
+    text-align: center;
+    padding: 60px;
+}
+
+.mbtn {
+    padding: 10px 15px;
+    margin-left: -5px;
+    background-color: white;
+    border: 1px solid #666666;
+}
+
+/* Contact page Css */
+
+.conback {
+    background-image: url(image/conuse.jpg);
+    background-size: 100% 100%;
+    /* opacity: 0.8; */
+    padding: 80px 6%;
+    margin-top: 77px;
+}
+
+.onlytxt {
+    color: white;
+    padding: 40px 50px;
+    /* border: 1px solid red; */
+}
+
+.location {
+    border-bottom: 1px solid #708399;
+    height: 70px;
+}
+
+.conform {
+    /* border: 1px solid green; */
+    background-color: white;
+    border-radius: 10px;
+    padding: 40px 50px;
+    background: linear-gradient(rgb(219, 148, 15, 0.5), rgba(20, 218, 20, 0.5), rgb(14, 14, 214, 0.5)), url(image/mainbackgroundd.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+input[type="submit"] {
+    background-color: rgba(61, 61, 199, 0.781);
+    color: white;
+    border: 1px solid transparent;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+@media only screen and (max-width:768px) {
+    .conform input {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .conform textarea {
+        width: 100%;
+    }
+}
+
+
+
+.grip h1 {
+    border: 1px solid transparent;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    /* border-bottom: 2px solid red; */
+    padding: 5px;
+    background-color: #1B7EFF;
+    color: #FFFFFF;
+    color: white;
+    position: absolute;
+    top: 30px;
+    left: 48%;
+}
+
+@media screen and (max-width:600px) {
+    .paddingg h1 {
+        top: 215px;
+        left: 40px;
+    }
+}
+
+
+
+/* scrollbar css */
+.scrollup {
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    text-align: center;
+    padding: 10px;
+    z-index: 100;
+    display: none;
+}
+
+
+
+

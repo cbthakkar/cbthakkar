@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responcive Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="image/icon.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- scrollbar js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="scroll.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Header start -->
+    <div class="row">
+        <div class="col-12 header">
+            <div class="logo">
+                <img src="image/business.jpg">
+            </div>
+            <div class="link">
+                <a href="index.html">Home Page</a>
+                <a href="about.html">About Us</a>
+                <a href="business.html">Our Business</a>
+                <a href="news.html">News Information</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="#"><i class="fa fa-phone"></i>&nbsp;&nbsp;Hotline:400-000-0000</a>
+            </div>
+        </div>
+    </div>
+
+    <a href="" class="scrollup">
+        <img src="image/top.png" alt="Back To Top" />
+    </a>
+    <!-- Header end -->
+
+    <div class="row conback mgtop3">
+        <div class="col-6 onlytxt">
+            <h2 style="line-height: 1.5;">All the words here are for demonstration purposes. Please enter your own
+                business content asset.</h2>
+            <br><br>
+            <div class="location">
+                <img src="image/location.jpg" width="50px" style="float: left;">
+                <span style="float: left;font-size: 17px;padding: 0px 20px;line-height: 1.5;">Our location <br> No. XXX,
+                    XX District,XX City</span>
+            </div><br><br><br>
+            <div class="location">
+                <img src="image/calluse.jpg" width="50px" style="float: left;">
+                <span style="float: left;font-size: 17px;padding: 0px 20px;line-height: 1.5;">Our location <br> No. XXX,
+                    XX District,XX City</span>
+            </div><br><br><br>
+            <div class="location">
+                <img src="image/servicee.jpg" width="50px" style="float: left;">
+                <span style="float: left;font-size: 17px;padding: 0px 20px;line-height: 1.5;">Our location <br> No. XXX,
+                    XX District,XX City</span>
+            </div>
+
+        </div>
+        <div class="col-6 conform">
+            <form name="myform" action="" method="post" onsubmit="return validate()">
+                <h1 align="center">Contact Us</h1>
+                <p align="center">CONTACT US</p><br><br>
+
+                <input name="name" type="text" placeholder="Name" size="60"
+                    style="border-radius: 5px; border:1px solid transparent;padding: 15px;background-color: #F5F5F5;"><br>
+                <span id="txt" style="background-color: red;color: white;"></span><br><br>
+
+                <input name="email" type="email" placeholder="Email" size="60"
+                    style="border-radius: 5px;border:1px solid transparent;padding: 15px;background-color: #F5F5F5;"><br>
+                <span id="txt1" style="background-color: red;color: white;"></span><br><br>
+
+                <textarea name="tarea" placeholder="Content" rows="8" cols="62"
+                    style="border-radius: 5px;border:1px solid transparent;background-color: #F5F5F5;"></textarea><br>
+                <span id="txt2" style="background-color: red;color: white;"></span><br><br>
+                <br><br>
+                <input type="submit" value="Submit" class="sub">
+                <!-- <a href="#"><button class="btn">Submit</button></a> -->
+            </form>
+        </div>
+    </div>
+
+   
+
+
+
+
+
+
+    <!-- Footer strat -->
+    <div class="row details">
+        <div class="col-6">
+            <img src="image/business.jpg">
+            <p>Email: 1234***@XXXX.com Addr: 123, XX street, XX District, XX City</p>
+            <p style="font-weight: bold;">138-1234-XXXX</p>
+        </div>
+        <div class="col-6 copy">
+            <a href="https://www.facebook.com/"><img src="image/fbicon.jpg" height="50px"></a>
+            <a href="https://twitter.com/i/flow/login"><img src="image/twittericon.jpg" height="50px"></a>
+            <p>&copy;Copyright 2022 -All Rights Reserved</p>
+        </div>
+    </div>
+    <!-- Footer end -->
+
+    
+
+
+   
+    <script>
+
+
+        function validate() {
+            var name = document.forms["myform"]["name"].value;
+            if (name == "" || name == null) {
+                document.getElementById('txt').innerHTML = 'Please Fill Out The User First Name';
+            }
+            else if (name.length < 10) {
+                document.getElementById('txt').innerHTML = 'Please Fill Out ';
+            }
+            else {
+                document.getElementById('txt').innerHTML = '';
+                // return false;
+            }
+
+
+            var nameemail = document.forms["myform"]["email"].value;
+            if (nameemail == "" || nameemail == null) {
+                document.getElementById('txt1').innerHTML = 'Please Fill Out Email';
+            }
+            else if (nameemail.length < 10) {
+                document.getElementById('txt1').innerHTML = 'Please Fill Out Limited Email ';
+            }
+            else {
+                document.getElementById('txt1').innerHTML = '';
+                // return false;
+            }
+
+
+            var tarea = document.forms["myform"]["tarea"].value;
+            if (tarea.length < 10) {
+                document.getElementById('txt2').innerHTML = 'Please Long Text';
+                return false;
+            }
+            else {
+                document.getElementById('txt2').innerHTML = '';
+                // return false;
+            }
+
+            //   return false;
+
+        }
+
+
+
+        // var today = new Date();
+        // document.getElementById('dategmt').innerHTML = today;
+
+        // var date = (today.getDate()) + '-' + (today.getMonth() + 1) + '-' + (today.getFullYear());
+        // document.getElementById('date').innerHTML = date;
+
+
+        // var time = (today.getHours()) + ':' + (today.getMinutes()) + ':' + (today.getSeconds());
+        // document.getElementById('time').innerHTML = time;
+
+    </script>
+
+
+</body>
+
+</html>
